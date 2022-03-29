@@ -1,6 +1,6 @@
 import web3 from './web3';
 
-const address = '0x55F436fBB1D3a5F00Ea56c2De886F5409Aa6c38a';
+const address = '0x30E295F911e5cA6cE1AF977A204850260d39fF5c';
 const abi = [
 	{
 		"inputs": [
@@ -581,6 +581,19 @@ const abi = [
 		"inputs": [
 			{
 				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "changeOwner",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
 				"name": "_SerialNumber",
 				"type": "address"
 			}
@@ -858,5 +871,6 @@ const abi = [
 		"type": "function"
 	}
 ]
+
 
 export default new web3.eth.Contract(abi, address);
